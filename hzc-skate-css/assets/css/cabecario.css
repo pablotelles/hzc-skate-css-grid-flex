@@ -1,0 +1,187 @@
+
+.cabecario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #15191C;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+    height: 80px;
+    box-sizing: border-box;
+    padding: 16px 16px;
+    grid-area: cabecario;
+    
+   
+}
+.menu-logo {
+    width: 40px;
+}
+.menu-logo-desativado {
+    display: none;
+}
+.botao__menu i::before{
+    content: '\e904';
+    font-size: 24px;
+}
+.botao__notificacao i::before{
+    content: '\e906';
+    font-size: 24px;
+    cursor: pointer;
+}
+.botao__notificacao:hover {
+    color: #0480DC;
+}
+.menu-lateral {
+    display: none;
+    background-color: #15191C;
+    width: 65vw;
+    padding: 24px 24px;
+    transform: 0.5s;
+ 
+}
+.menu-lateral--ativo {
+    display: block;
+    position: absolute;
+}
+.menu-lateral-logo {
+    display: block;
+    align-self: center;
+    width: 118px;
+    height: 118px;
+    padding: 40px;
+}
+.menu-lateral__lista {
+    display: grid;
+    grid-gap: 44px;
+    align-items: center;
+}
+.menu-lateral-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 18px;
+    font-size: 22px;
+    color: #95999C;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.menu-lateral-item:hover {
+    color: #0480DC;
+    border-left: 3px solid #0480DC;
+    padding-left: 20px;
+    transition: 0.3s;
+}
+.menu-perfil {
+    background-color: #15191C;
+}
+.menu-perfil__lista {
+    display: none;
+    transition-duration: 1s;
+    
+
+}
+.menu-perfil__lista--mostra {
+    display: block;
+    position: absolute;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: #15191C;
+    transition-duration: 1s;
+    
+}
+.menu-perfil__item {
+    display: flex;
+    color: #95999C;
+    padding-top: 8px;
+    padding-left: 16px;
+    padding-right: 32px;
+    padding-bottom: 8px;    
+}
+.menu-perfil__item:hover {
+    color: white;
+    cursor: pointer;
+}
+
+    
+   
+
+
+/* icones do mene */
+
+.menu-lateral-item--inicio::before {
+    content: '\e902';
+
+}
+.menu-lateral-item--videos::before {
+    content: "\e90e";
+    
+}
+.menu-lateral-item--picos::before {
+    content: "\e909";
+    
+}
+.menu-lateral-item--integrantes::before {
+    content: "\e903";
+    
+}
+.menu-lateral-item--camisas::before {
+    content: "\e900";
+    
+}
+.menu-lateral-item--pinturas::before {
+    content: "\e90a";    
+}
+.cabecario__perfil {
+    display: none;
+}
+
+
+@media screen and (min-width: 700px) {
+    .menu-lateral {
+        display: block;
+        max-width: 200px;
+        
+        
+     
+    }
+    .cabecario {
+        display: flex;
+        justify-content: flex-end;}
+        /* items escondidos mobile */
+        .cabecario__perfil {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 30px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        .cabecario__perfil:hover {
+            color: #0480DC;
+        }
+        .cabecario__perfil::before {
+            content: '';
+            
+            width: 32px;
+            height: 32px;
+            background-image: url("../img/profile_2.png");
+            background-position: center;
+            border-radius: 50%;
+            background-size: contain;
+            margin-right: 8px;
+            
+        }
+        .cabecario__perfil::after {
+            content: '\e90d';
+            margin-right: 8px;
+            padding-right: 24px;
+            font-size: 24px;
+            border-right: 2px solid #95999C;
+            cursor: pointer;
+            
+        }
+    
+
+
+
+
+
+}   

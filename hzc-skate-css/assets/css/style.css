@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'icones';
+    src: url(../font/icones.ttf);
+}
+
+body {
+
+    
+    font-family: 'Open Sans', 'icones', sans-serif;
+    font-size: 16px;
+    color: white;
+    background: #1D232A;
+
+}
+
+
+main {
+    padding: 24px 16px;
+    
+  
+}
+
+.titulo-pagina {
+    font-weight: bold;
+    font-size: 26px;
+    padding-bottom: 16px ;
+}
+.secao__titulo {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 16px 0;
+}
+
+
+.titulo-pagina {
+    grid-area: titulo-pagina;
+}
+.cartao-destaque--video {
+    grid-area: destaque-video ;
+}
+.videos-recentes {
+    grid-area: videos-recentes;
+}
+.videos-mais-vistos {
+    grid-area: videos-mais-vistos;
+}
+.novas-artes {
+    grid-area: novas-artes;
+}
+.cartao-destaque--produto {
+    grid-area: destaque-produto;
+}
+.produtos {
+    grid-area: produtos;
+}
+
+@media screen and (min-width: 700px) {
+    body {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-areas: 
+        
+        "menu-lateral cabecario"
+        "menu-lateral corpo";
+        
+    }
+    .menu-lateral {
+        grid-row: span 2;
+    }
+    main {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        grid-gap: 16px;
+        grid-template-areas: 
+        "titulo-pagina titulo-pagina titulo-pagina"
+        "destaque-video destaque-video videos-recentes"
+        "videos-mais-vistos videos-mais-vistos videos-mais-vistos"
+        "novas-artes destaque-produto destaque-produto"
+        "produtos produtos produtos";
+    }
+    .botao__menu {
+        display: none;
+    }
+    .menu-logo {
+        display: none;
+    }
+  
+    .videos-mais-vistos {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 32px;
+    }
+    .secao__titulo {
+        grid-column: span 4;
+    }
+    .produtos {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 32px;
+    }
+
+
+}

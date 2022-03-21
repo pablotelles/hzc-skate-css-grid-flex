@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HZC | SkateBoard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/cabecario.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/cartoes.css">
+</head>
+<body>
+    <header class="cabecario">
+        <button class="botao__menu"><i></i></button>
+        <img class="menu-logo" src="./img/logo.svg">
+        
+        <div class="menu-perfil">
+            <a class="cabecario__perfil">Pablo Teles</a>
+            <ul class="menu-perfil__lista">
+                <li class="menu-perfil__item">Minha conta</li>
+                <li class="menu-perfil__item">Pedidos</li>
+                <li class="menu-perfil__item">Configuração</li>
+            </ul>
+        </div>
+        <button class="botao__notificacao"><i></i></button>
+    </header>
+    <nav class="menu-lateral">
+        <img class="menu-lateral-logo" src="./img/logo.svg">
+        <ul class="menu-lateral__lista">
+            <li class="menu-lateral-item menu-lateral-item--inicio">Início</li>
+            <li class="menu-lateral-item menu-lateral-item--videos">Vídeos</li>
+            <li class="menu-lateral-item menu-lateral-item--picos">Picos</li>
+            <li class="menu-lateral-item menu-lateral-item--integrantes">Integrantes</li>
+            <li class="menu-lateral-item menu-lateral-item--camisas">Camisas</li>
+            <li class="menu-lateral-item menu-lateral-item--pinturas">Pinturas</li>
+        </ul>
+    </nav>
+    <main class="conteudo-home">
+        <h2 class="titulo-pagina">Início</h2>
+        <article class="cartao cartao-destaque cartao-destaque--video">
+            <img class="cartao-imagem cartao__imagem--mobile" src="./img/banner-mobile_1.png">
+            <img class="cartao-imagem cartao__imagem--desktop" src="./img/banner_1.png">
+            <div class="cartao__conteudo">
+                <p class="cartao-sub-titulo">Videos emd estaque</p>
+                <h3 class="cartao-titulo">HAZC - live is.../ 2021</h2>
+                <p class="cartao__autor">Bruno Lopez</p>
+                <p class="cartao__info cartao__info--tempo">33 Minutos</p>
+                <p class="cartao__info cartao__info--vizualizacao">50 minutos</p>
+                <button class="cartao__botao cartao__botao--video cartao-botao__destaque">Assistir agora</button>
+            </div>      
+        </article>
+
+        <section class="videos-recentes cartao-vertical">
+            <h4 class="cartao-vertical__titulo">Videos recentes</h4>
+            <a class="cartao-vertical__link">Ver todos</a>
+            <ul class="cartao-vertical__lista">
+                <li class="cartao-vertical__item">
+                    <img class="cartao-vertical__imagem" src="./img/miniatura_1.png">
+                    <h4 class="cartao-vertical__titulo">HZC - love machine</h4>
+                    <p class="cartao-vertical__autor">Julia Fonseca</p>
+                </li>
+                <li class="cartao-vertical__item">
+                    <img class="cartao-vertical__imagem" src="./img/miniatura_2.png">
+                    <h4 class="cartao-vertical__titulo">HZC - love machine</h4>
+                    <p class="cartao-vertical__autor">Julia Fonseca</p>
+                </li>
+                <li class="cartao-vertical__item">
+                    <img class="cartao-vertical__imagem" src="./img/miniatura_3.png">
+                    <h4 class="cartao-vertical__titulo">HZC - love machine</h4>
+                    <p class="cartao-vertical__autor">Julia Fonseca</p>
+                </li>
+                <li class="cartao-vertical__item">
+                    <img class="cartao-vertical__imagem" src="./img/miniatura_4.png">
+                    <h4 class="cartao-vertical__titulo">HZC - love machine</h4>
+                    <p class="cartao-vertical__autor">Julia Fonseca</p>
+                </li>
+                <li class="cartao-vertical__item">
+                    <img class="cartao-vertical__imagem" src="./img/miniatura_5.png">
+                    <h4 class="cartao-vertical__titulo">HZC - love machine</h4>
+                    <p class="cartao-vertical__autor">Julia Fonseca</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="videos-mais-vistos cartao__horizontal">
+            <h4 class="videos-mais-vistos__titulo secao__titulo">Videos mais vistos</h4>
+
+            <article class="cartao">
+                <img class="cartao-imagem" src="./img/video_1.png">
+                <div class="cartao__conteudo">
+                    <p class="cartao__autor">Jose Silveriano</p>
+                    <h3 class="cartao-titulo">HZC - tudo sem Padrin</h3>
+                    <p class="cartao__info cartao__info--tempo">34 Minutos</p>
+                    <button class="cartao__botao cartao__botao--video"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img class="cartao-imagem" src="./img/video_2.png">
+                <div class="cartao__conteudo">
+                    <p class="cartao__autor">Jose Silveriano</p>
+                    <h3 class="cartao-titulo">HZC - tudo sem Padrin</h3>
+                    <p class="cartao__info cartao__info--tempo">34 Minutos</p>
+                    <button class="cartao__botao cartao__botao--video"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img class="cartao-imagem" src="./img/video_3.png">
+                <div class="cartao__conteudo">
+                    <p class="cartao__autor">Jose Silveriano</p>
+                    <h3 class="cartao-titulo">HZC - tudo sem Padrin</h3>
+                    <p class="cartao__info cartao__info--tempo">34 Minutos</p>
+                    <button class="cartao__botao cartao__botao--video"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img class="cartao-imagem" src="./img/video_4.png">
+                <div class="cartao__conteudo">
+                    <p class="cartao__autor">Jose Silveriano</p>
+                    <h3 class="cartao-titulo">HZC - tudo sem Padrin</h3>
+                    <p class="cartao__info cartao__info--tempo">34 Minutos</p>
+                    <button class="cartao__botao cartao__botao--video"></button>
+                </div>
+            </article>
+
+          
+        
+
+        </section>
+
+        <section class="novas-artes cartao-vertical">
+            <h4 class="cartao-vertical__titulo">Novas-artes</h4>
+            <a class="cartao-vertical__link">Ver todos</a>
+            <ul class="cartao-vertical__lista">
+                <li class="cartao-vertical__item">
+                    <img class="cartao-vertical__imagem" src="./img/Rectangle 100.png">
+                    <h4 class="cartao-vertical__titulo">HZC - love machine</h4>
+                    <p class="cartao-vertical__autor">Julia Fonseca</p>
+                </li>
+                <li class="cartao-vertical__item">
+                    <img class="cartao-vertical__imagem" src="./img/Rectangle 102.png">
+                    <h4 class="cartao-vertical__titulo">HZC - love machine</h4>
+                    <p class="cartao-vertical__autor">Julia Fonseca</p>
+                </li>
+                <li class="cartao-vertical__item">
+                    <img class="cartao-vertical__imagem" src="./img/Rectangle 103.png">
+                    <h4 class="cartao-vertical__titulo">HZC - love machine</h4>
+                    <p class="cartao-vertical__autor">Julia Fonseca</p>
+                </li>
+                <li class="cartao-vertical__item">
+                    <img class="cartao-vertical__imagem" src="./img/Rectangle 97.png">
+                    <h4 class="cartao-vertical__titulo">HZC - love machine</h4>
+                    <p class="cartao-vertical__autor">Julia Fonseca</p>
+                </li>
+                <li class="cartao-vertical__item">
+                    <img class="cartao-vertical__imagem" src="./img/Rectangle 98.png">
+                    <h4 class="cartao-vertical__titulo">HZC - love machine</h4>
+                    <p class="cartao-vertical__autor">Julia Fonseca</p>
+                </li>
+            </ul>
+        </section>
+
+        
+        <article class="cartao cartao-destaque cartao-destaque--produto">
+            <img class="cartao-imagem cartao__imagem--mobile" src="./img/banner-mobile_2.png">
+            <img class="cartao-imagem cartao__imagem--desktop" src="./img/banner_2.png">
+            <div class="cartao__conteudo">
+                <p class="cartao-sub-titulo">Nova arte</p>
+                <h3 class="cartao-titulo">Only Zikas - Lagoa Dompa Club</h2>
+                <p class="cartao__autor">Ricardo Farias</p>
+                <p class="cartao__info cartao__info--produto">50</p>
+                <p class="cartao__info cartao__info--vizualizacao">80 minutos</p>
+                <button class="cartao__botao cartao-botao__destaque cartao__botao--produto">Comprar agora</button>
+            </div>       
+        </article>
+
+        <section class="produtos">
+            <h4 class="produtos__titulo secao__titulo">Camisas mais vendidas</h4>
+            <article class="cartao">
+                <img class="cartao-imagem" src="./img/produto_1.png">
+                <div class="cartao__conteudo">
+                    <p class="cartao__autor">Jose Silveriano</p>
+                    <h3 class="cartao-titulo">HZC - tudo sem Padrin</h3>
+                    <p class="cartao__info cartao__info--produto">89</p>
+                    <button class="cartao__botao cartao__botao--produto"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img class="cartao-imagem" src="./img/produto_2.png">
+                <div class="cartao__conteudo">
+                    <p class="cartao__autor">Jose Silveriano</p>
+                    <h3 class="cartao-titulo">HZC - tudo sem Padrin</h3>
+                    <p class="cartao__info cartao__info--produto">99</p>
+                    <button class="cartao__botao cartao__botao--produto"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img class="cartao-imagem" src="./img/produto_3.png">
+                <div class="cartao__conteudo">
+                    <p class="cartao__autor">Jose Silveriano</p>
+                    <h3 class="cartao-titulo">HZC - tudo sem Padrin</h3>
+                    <p class="cartao__info cartao__info--produto">99</p>
+                    <button class="cartao__botao cartao__botao--produto"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img class="cartao-imagem" src="./img/produto_4.png">
+                <div class="cartao__conteudo">
+                    <p class="cartao__autor">Jose Silveriano</p>
+                    <h3 class="cartao-titulo">HZC - tudo sem Padrin</h3>
+                    <p class="cartao__info cartao__info--produto">99</p>
+                    <button class="cartao__botao cartao__botao--produto"></button>
+                </div>
+            </article>
+
+         
+
+
+        </section>
+
+    </main>
+     
+    <script src="index.js"></script>
+</body>
+</html>
